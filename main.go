@@ -21,6 +21,7 @@ var (
 	packages   = kingpin.Arg("packages", "Packages to build").String()
 )
 
+// direct calls
 func main() {
 	kingpin.Version(fmt.Sprintf("%s (%s)", version, commit))
 	kingpin.Parse()
